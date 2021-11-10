@@ -38,6 +38,8 @@ SYNC_TEST: 0.13s user 0.08s system 9% cpu 2.105 total
 ### 500 requests
 ASYNC_TEST: 0.13s user 0.08s system 7% cpu 2.816 total
 
+THIRD_PARTY_ASYNC_TEST 0.13s user 0.07s system 9% cpu 2.223 total
+
 SYNC_TEST: 0.14s user 0.10s system 2% cpu 11.290 total
 
 
