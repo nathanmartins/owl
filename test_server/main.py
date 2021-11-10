@@ -1,7 +1,9 @@
 import json
 import logging
+import os
 import random
 import string
+import time
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 
@@ -14,6 +16,10 @@ class Server(BaseHTTPRequestHandler):
     # noinspection PyPep8Naming
     def do_GET(self):
         logging.info("GET request,\nPath: %s\nHeaders:\n%s\n", str(self.path), str(self.headers))
+
+        if os.environ.get("SLEEP"):
+            time.sleep(random.randrange(3, 20))
+
         self._set_response()
         res = dict()
         for i in range(10):
