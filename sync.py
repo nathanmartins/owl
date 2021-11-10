@@ -1,3 +1,4 @@
+import os
 from http import client
 
 
@@ -11,5 +12,5 @@ def request(url: str) -> bytes:
     return res.read()
 
 
-data = request("localhost:8000")
+data = request(os.environ.get("URL"))
 print(data.decode("utf-8"))
