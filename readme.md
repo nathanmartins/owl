@@ -42,6 +42,16 @@ THIRD_PARTY_ASYNC_TEST 0.13s user 0.07s system 9% cpu 2.223 total
 
 SYNC_TEST: 0.14s user 0.10s system 2% cpu 11.290 total
 
+### 1000 requests
+ASYNC_TEST: 0.14s user 0.09s system 5% cpu 4.132 total
+THIRD_PARTY_ASYNC_TEST: 0.13s user 0.08s system 8% cpu 2.379 total
+
+
+### 10000
+THIRD_PARTY_ASYNC_TEST 0.13s user 0.08s system 8% cpu 2.404 total
+ASYNC_TEST 0.19s user 0.18s system 1% cpu 19.505 total
+
+
 
 ---
 
