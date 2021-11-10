@@ -59,3 +59,38 @@ ASYNC:                  0.17s user 0.16s system 1% cpu 26.168 total
 
 THIRD_PARTY_ASYNC_TEST: 0.13s user 0.08s system 8% cpu 2.650 total
 
+---
+
+## Random sleeping results
+
+### time tests
+cpu -  is the time from start to finish of the call. It is the time from the moment you hit the Enter key until the moment the wget command is completed.
+
+user - amount of CPU time spent in user mode.
+
+system or sys - amount of CPU time spent in kernel mode.
+
+### 100 requests
+SYNC:                   0.16s user 0.10s system 0% cpu 2:51.85 total (with many failed connections)
+
+ASYNC:                  0.16s user 0.10s system 0% cpu 4:04.69 total
+
+THIRD_PARTY_ASYNC_TEST: 0.14s user 0.08s system 0% cpu 30.521 total
+
+### 500 requests
+SYNC:                   0.00s user 0.00s system 0% cpu 00.000 total (FAILED - KILL DOCKER ENGINE)
+ASYNC: 
+THIRD_PARTY_ASYNC_TEST: 
+
+
+### 1000 requests
+SYNC:                   0.00s user 0.00s system 0% cpu 00.000 total (FAILED - KILL DOCKER ENGINE)
+ASYNC: 
+THIRD_PARTY_ASYNC_TEST:
+
+
+### 10000 requests
+SYNC:                   0.00s user 0.00s system 0% cpu 00.000 total (FAILED - KILL DOCKER ENGINE)
+ASYNC: 
+THIRD_PARTY_ASYNC_TEST:
+
