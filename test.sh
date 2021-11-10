@@ -7,6 +7,8 @@ if [[ -n "${SYNC_TEST}" ]]; then
     python3 sync.py &
   done
 
+  wait
+
 fi
 
 if [[ -n "${ASYNC_TEST}" ]]; then
